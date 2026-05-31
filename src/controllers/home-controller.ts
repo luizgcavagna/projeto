@@ -32,4 +32,4 @@ class HomeController {
   }
 }
 
-export { HomeController}
+export { HomeController }

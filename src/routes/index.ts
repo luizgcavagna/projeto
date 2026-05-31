@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { HomeController } from "../controllers/home-controller.js";
+import { statesRoutes } from "./states-routes.js";
+import { citiesRoutes } from "./cities-routes.js";
 
 const routes = Router();
-const homeController = new HomeController();
 
-routes.get("/states", homeController.states);
-routes.get("/cities/:state_id", homeController.cities);
+routes.use("/states", statesRoutes);
+routes.use("/cities", citiesRoutes);
 
 export { routes };
