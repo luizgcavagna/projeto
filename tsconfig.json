@@ -17,7 +17,6 @@
     "isolatedModules": true,
     
     /* Emissão de Arquivos */
-    "rootDir": "./src",
     "outDir": "./dist",
     "sourceMap": true,
     "declaration": true,
