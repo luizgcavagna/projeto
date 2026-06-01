@@ -7,6 +7,6 @@ export async function seed(knex: Knex): Promise<void> {
     // Inserts seed entries
     await knex("categories").insert([
         { name: "Encanador" },
-        { name: "Pedreiro" }
+        { name: "Pedreiro da web" }
     ]);
 };
